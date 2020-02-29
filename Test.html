@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="animate.css-master/animate.css">
+    <!-- 引入jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #666666;
+        }
+        
+        header {
+            width: 700px;
+            height: 5000px;
+            margin: 0 auto;
+            background-color: pink;
+        }
+        
+        .myel {
+            width: 200px;
+            height: 200px;
+            animation-duration: 3s;
+            animation-delay: 3s;
+            animation-iteration-count: infinite;
+        }
+        
+        button {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+        }
+        
+        div {
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h4>测试我们的css动画库-animate动画库</h4>
+        <h1 class="animated infinite bounce myel">Example</h1>
+        <h1 class="animated infinite  zoomOutDown myel ">第二个动画测试</h1>
+
+        <button id="btn">按钮</button>
+        <div class="myel" id="Test">测试模块</div>
+    </header>
+
+</body>
+<script>
+    $('#btn').addClass('animated bounceOutLeft myel');
+    $('#Test').addClass('animated bounceOutRight myel');
+</script>
+
+</html>
